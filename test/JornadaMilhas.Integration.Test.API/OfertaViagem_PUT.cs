@@ -1,5 +1,6 @@
 ﻿using JornadaMilhas.Dominio.Entidades;
 using JornadaMilhas.Dominio.ValueObjects;
+using Microsoft.EntityFrameworkCore;
 using System.Net;
 using System.Net.Http.Json;
 
@@ -17,6 +18,7 @@ public class OfertaViagem_PUT : IClassFixture<JornadaMilhasWebApplicationFactory
     public async Task Atualizar_OfertaViagem()
     {
         //Arrange  
+        app.Context.Database.ExecuteSqlRaw("Delete from OfertasViagem");
         var ofertaExistente = app.Context.OfertasViagem.FirstOrDefault();
         if (ofertaExistente is null)
         {
