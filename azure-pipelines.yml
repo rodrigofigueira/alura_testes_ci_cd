@@ -16,7 +16,7 @@ steps:
   displayName: 'Testes de Unidade'
   inputs:
     command: test
-    projects: '**/test/JornadaMilhas.Unity.Test/JornadaMilhas.Unit.Test.csproj'
+    projects: '**/test/JornadaMilhas.Unit.Test/JornadaMilhas.Unit.Test.csproj'
     arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
