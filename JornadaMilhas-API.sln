@@ -20,10 +20,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JornadaMilhas.Unit.Test", "test\JornadaMilhas.Unit.Test\JornadaMilhas.Unit.Test.csproj", "{A6694EC0-4B24-46D2-A477-DD7EE84EE289}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{A4133843-CEE5-4493-9AC3-40FD25FAF481}"
-	ProjectSection(SolutionItems) = preProject
-		azure-pipelines.yml = azure-pipelines.yml
-		script.bat = script.bat
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
